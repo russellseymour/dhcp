@@ -1,3 +1,7 @@
+5.4.1
+-----
+* Service will use `systemd` for Ubunu versions 15.04 and above
+
 5.4.0
 -----
 * Added hooks
