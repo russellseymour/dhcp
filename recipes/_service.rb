@@ -6,7 +6,7 @@ service node['dhcp']['service_name'] do
   # use upstart on ubuntu > 9.10
   case node['platform']
   when 'ubuntu'
-    if node['platform_version'].to_f >= 9.10 and node['platform_version'].to_f < 15.04
+    if node['platform_version'].to_f >= 9.10 && node['platform_version'].to_f < 15.04
       provider Chef::Provider::Service::Upstart
     else if node['platform_version'].to_f >= 15.04
       provider Chef::Provider::Service::Systemd
